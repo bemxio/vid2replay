@@ -1,0 +1,7 @@
+# add key input detection to 'analyze_frames.py'
+# add frame by frame display script
+# make a osu replay dumper
+
+# add documentation and comments to the code
+# embed it all into a jupyter notebook
+  (and maybe put it on google colab :D)
