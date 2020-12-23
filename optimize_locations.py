@@ -1,3 +1,4 @@
+import config as cf
 import pickle
 import os
 
@@ -13,9 +14,7 @@ for index, location in enumerate(locations):
         locations[index] = prev
         continue
     
-    if (location[0] - prev[0]) >= 50:
-        locations[index] = prev
-    if (location[1] - prev[1]) >= 50:
+    if (location[0] - prev[0]) >= cf.max_limit or (location[1] - prev[1]) >= cf.max_limit:
         locations[index] = prev
         
     prev = location
